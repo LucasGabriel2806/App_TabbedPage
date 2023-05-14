@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            BarBackgroundColor="#1ba14a"
+            SelectedTabColor="White"
+            UnselectedTabColor="Black"
+             x:Class="App_TabbedPage.MainPage">
+
+    <!--
+    Nós trocamos a <ContentPage> Por TabbedPage, precisamos configurar o code behind também
+    
+    A tabbed page, todas as abas ficam num único arquivo xaml, 
+        Então precisamos criar todas as abas e cada aba funciona como uma página
+    
+    IconImageSource colocaria uma imagem-->
+
+    <ContentPage Title="Conversas">
+        <StackLayout>
+            
+            <Label Text="Não há conversas disponiveis" FontSize="Title" HorizontalOptions="Center"/>
+            <Button x:Name="btnProximo1" Text="Próximo" CornerRadius="20"
+                    HorizontalOptions="Center" BackgroundColor="Transparent" BorderColor="Black" BorderWidth="1" 
+                    Clicked="btnProximo1_Clicked" />
+            
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Status">
+        <StackLayout>
+            
+            <Label Text="Não há status disponiveis" FontSize="Title" HorizontalOptions="Center" />
+            <Button x:Name="btnAnterior2" Text="Anterior" CornerRadius="20"
+                    HorizontalOptions="Center" BackgroundColor="Transparent" BorderColor="Black" BorderWidth="1" 
+                    Clicked="btnAnterior2_Clicked"/>
+            <Button x:Name="btnProximo2" Text="Próximo" CornerRadius="20"
+                    HorizontalOptions="Center" BackgroundColor="Transparent" BorderColor="Black" BorderWidth="1" 
+                    Clicked="btnProximo2_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Chamadas">
+        <StackLayout>
+            
+            <Label Text="Não há chamadas disponiveis" FontSize="Title" HorizontalOptions="Center" />
+            <Button x:Name="btnAnterior3" Text="Anterior" CornerRadius="20"
+                    HorizontalOptions="Center" BackgroundColor="Transparent" BorderColor="Black" BorderWidth="1" 
+                    Clicked="btnAnterior3_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage>
+
+</TabbedPage>
